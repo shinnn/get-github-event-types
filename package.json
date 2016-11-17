@@ -1,0 +1,41 @@
+{
+  "name": "get-github-event-types",
+  "version": "1.0.0",
+  "description": "Get all Event types of the Github API from the API reference",
+  "repository": "shinnn/get-github-event-types",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --format=codeframe index.js test.js",
+    "test": "istanbul cover test.js"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "https",
+    "get",
+    "data",
+    "fetch",
+    "github",
+    "api",
+    "list",
+    "array",
+    "name",
+    "type",
+    "event"
+  ],
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "fettuccine": "^1.0.2"
+  },
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "eslint": "^3.10.2",
+    "istanbul": "^0.4.5",
+    "tape": "^4.6.2"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
+  }
+}
